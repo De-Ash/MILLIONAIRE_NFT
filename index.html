@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <title>Ord Millionaire Puppets</title>
+    </head>
+
+    <body>
+        <div id="myNavBar"></div>
+        <div id="myLandingArea"></div>
+        <div id="about"></div>
+        <div id="art"></div>
+        <div id="artist"></div>
+        <div id="cursed"></div>
+        <div id="howToBuy"></div>
+        <div id="hypeTown"></div>
+        <div id="footer"></div>
+        <script>
+            // Function to fetch and insert HTML content
+            function includeHTML(filename, targetId) {
+                fetch(filename)
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById(targetId).innerHTML = html;
+                    })
+                    .catch(error => console.error('Error fetching HTML:', error));
+            }
+
+            // Load HTML files from the same directory into respective div elements
+            includeHTML('navBar.html', 'myNavBar');
+            includeHTML('landing.html', 'myLandingArea');
+            includeHTML('about.html', 'about');
+            includeHTML('art.html', 'art');
+            includeHTML('artist.html', 'artist');
+            includeHTML('cursed.html', 'cursed');
+            includeHTML('howToBuy.html', 'howToBuy');
+            includeHTML('hypeTown.html', 'hypeTown');
+            includeHTML('footer.html', 'footer');
+        </script>
+        <script src="./js/index.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

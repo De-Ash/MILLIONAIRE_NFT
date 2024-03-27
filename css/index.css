@@ -1,0 +1,24 @@
+/* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .content {
+    height: 2000px; 
+    /* Just for demonstration, replace with your actual content */
+  }
+  
+  .gradient-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(to bottom, #ff0000, #00ff00, #0000ff); 
+    /* Initial gradient */
+    transition: background 0.5s ease;
+  }
+   */
