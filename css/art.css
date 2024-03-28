@@ -12,9 +12,17 @@
     left: 0;
     object-fit: cover;
     border-radius: inherit; /* Rounded edges */
+<<<<<<< HEAD
     transition: transform 0.5s ease; /* Smooth zoom on hover */
 }
 
 .video-container:hover video {
     transform: scale(1.25); /* Zoom on hover */
+=======
+    transition: transform 0.3s ease; /* Smooth zoom on hover */
+}
+
+.video-container:hover video {
+    transform: scale(1.5); /* Zoom on hover */
+>>>>>>> 1ce3b02a61977a02aac3400276372c2be13a425a
 }
