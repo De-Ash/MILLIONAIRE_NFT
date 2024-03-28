@@ -6,20 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/index.css">
-        <title>Ord Millionaire Puppets</title>
+        <title>Doginal Duppets</title>
     </head>
 
     <body>
-        <div id="myNavBar"></div>
-        <div id="myLandingArea"></div>
-        <div id="about"></div>
-        <div id="art"></div>
-        <div id="artist"></div>
-        <div id="cursed"></div>
-        <div id="howToBuy"></div>
-        <div id="hypeTown"></div>
-        <div id="footer"></div>
+        <div class="wrapper">
+            <div id="myNavBar"></div>
+            <div class="import" id="myLandingArea"></div>
+            <div class="import" id="about"></div>
+            <div class="import" id="art"></div>
+            <div class="import" id="roadMap"></div>
+            <!-- <div class="import" id="artist"></div> -->
+            <div class="import" id="cursed"></div>
+            <div class="import" id="howToBuy"></div>
+            <div class="import" id="hypeTown"></div>
+            <div id="footer"></div>
+        </div>
         <script>
             // Function to fetch and insert HTML content
             function includeHTML(filename, targetId) {
@@ -36,7 +42,8 @@
             includeHTML('landing.html', 'myLandingArea');
             includeHTML('about.html', 'about');
             includeHTML('art.html', 'art');
-            includeHTML('artist.html', 'artist');
+            includeHTML('roadMap.html', 'roadMap');
+            // includeHTML('artist.html', 'artist');
             includeHTML('cursed.html', 'cursed');
             includeHTML('howToBuy.html', 'howToBuy');
             includeHTML('hypeTown.html', 'hypeTown');
