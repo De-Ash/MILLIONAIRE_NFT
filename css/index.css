@@ -1,11 +1,7 @@
 *{
-  font-family: "Workbench", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "BLED" 0,
-    "SCAN" 0;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;  
 }
 html,body{
   padding: 0;
