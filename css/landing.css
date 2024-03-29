@@ -1,20 +1,30 @@
-.image
-{
+.image {
   position: relative;
   display: inline-block;
 }
 
-.animate
-{
+/* Add preloader styles */
+.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  border: 4px solid rgba(255, 255, 255, 0.3); /* Adjust color and thickness as needed */
+  border-top-color: #ffffff; /* Adjust color as needed */
+  border-radius: 50%;
+  animation: spin 1s linear infinite; /* Adjust animation duration and timing function as needed */
+}
+
+.animate {
   display: block;
   max-width: 100%;
   height: auto;
   animation: rotateImage 7.5s linear infinite;
-  /* Adjust timing and animation direction as needed */
 }
 
-.earth
-{
+.earth {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -31,38 +41,42 @@
   color: #000;
   z-index: 1;
 }
-@media (max-width:768px){
-  .image{
+
+@media (max-width:768px) {
+  .image {
     transform: scale(0.75);
   }
-  .earth{
+  .earth {
     width: 12rem;
     height: 12rem;
   }
 }
+
 /* Animation for globe rotation */
-@keyframes rotateGlobe
-{
-  0%
-  {
+@keyframes rotateGlobe {
+  0% {
     background-position: 0 0;
   }
-
-  100%
-  {
+  100% {
     background-position: 960px 0;
   }
 }
 
-@keyframes rotateImage
-{
-  0%
-  {
+@keyframes rotateImage {
+  0% {
     transform: rotateZ(0);
   }
-
-  100%
-  {
+  100% {
     transform: rotateZ(360deg);
+  }
+}
+
+/* Animation for preloader */
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
