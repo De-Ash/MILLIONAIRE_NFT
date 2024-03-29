@@ -4,7 +4,7 @@
   display: inline-block;
 }
 
-img.animate
+.animate
 {
   display: block;
   max-width: 100%;
@@ -30,6 +30,15 @@ img.animate
   box-shadow: inset 20px 0 80px 6px rgba(0, 0, 0, 1);
   color: #000;
   z-index: 1;
+}
+@media (max-width:768px){
+  .image{
+    transform: scale(0.75);
+  }
+  .earth{
+    width: 12rem;
+    height: 12rem;
+  }
 }
 /* Animation for globe rotation */
 @keyframes rotateGlobe
