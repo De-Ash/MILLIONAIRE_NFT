@@ -1,27 +1,65 @@
-*{
-    font-family: "Gaegu", sans-serif;
-    font-weight: 400;
-    font-style: normal; 
+*
+{
+  font-family: "Gaegu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-h1,h2,h3,h4,h5,h6{
-    font-family: "Indie Flower", cursive;
-    font-weight: 400;
-    font-style:normal;  
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
-html,body{
+
+html,
+body
+{
   padding: 0;
   margin: 0;
+  scrollbar-width: none;
 }
-.wrapper {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-     /* Ensure container covers the entire viewport */
-    background: linear-gradient(0deg,#ED1081,#E0358D,#D259A3,#C47DBA,#B5A2D0, #A7C7E7,#9AEDFF, #9AEDFF); 
-    /* Adjust colors as needed */
-  }
-.import{
-  min-height: 80vh;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+
+.wrapper
+{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(0deg, #ED1081, #E0358D, #D259A3, #C47DBA, #B5A2D0, #A7C7E7, #9AEDFF, #9AEDFF), url("../src/images/bright-squares.png") center/cover no-repeat;
+}
+
+.import
+{
+  min-height: 70vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+/* Hide scrollbar for Webkit/Blink based browsers */
+body::-webkit-scrollbar
+{
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track
+{
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb
+{
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+{
+  background: #555;
 }

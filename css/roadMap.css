@@ -1,0 +1,193 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.timeLine
+{
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.vessel
+{
+  padding: 5px;
+  position: relative;
+  width: 50%;
+  animation: moveDown 1s linear forwards;
+}
+
+.vessel :nth-child(2)
+{
+  animation-delay: 4s;
+}
+
+.vessel :nth-child(3)
+{
+  animation-delay: 6s;
+}
+
+.vessel :nth-child(4)
+{
+  animation-delay: 8s;
+}
+
+.vessel :nth-child(5)
+{
+  animation-delay: 10s;
+}
+
+.vessel :nth-child(6)
+{
+  animation-delay: 12s;
+}
+
+@keyframes moveDown
+{
+  0%
+  {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100%
+  {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.textBox
+{
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #ffffff18;
+  box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.left-vessel
+{
+  left: 0;
+}
+
+.right-vessel
+{
+  left: 50%;
+}
+
+.timeLine::after
+{
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: #c712b5;
+  top: 0;
+  left: 50%;
+  margin: -3px;
+  z-index: 10;
+  animation: moveLine 5s linear forwards;
+}
+
+@keyframes moveLine
+{
+  0%
+  {
+    height: 0
+  }
+
+  100%
+  {
+    height: 100%
+  }
+}
+
+.textBox h2
+{
+  font-weight: 600;
+}
+
+.textBox small
+{
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.left-vessel-arrow
+{
+  height: 0;
+  width: 0;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #fff;
+  right: 15px;
+}
+
+.right-vessel-arrow
+{
+  height: 0;
+  width: 0;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #fff;
+  left: 15px;
+}
+
+@media screen and (max-width:600px)
+{
+  .timeLine
+  {
+    margin: 50px auto;
+  }
+
+  .timeLine::after
+  {
+    left: 31px
+  }
+
+  .vessel
+  {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+
+  .textBox
+  {
+    font-size: 13px;
+  }
+
+  .textBox small
+  {
+    margin-bottom: 10px;
+  }
+
+  .right-vessel
+  {
+    left: 0;
+  }
+
+  .left-vessel img,
+  .right-vessel img
+  {
+    left: 10px
+  }
+
+  .left-vessel-arrow,
+  .right-vessel-arrow
+  {
+    border-right: 15px solid #fff;
+    border-left: 0;
+    left: -15px
+  }
+}
