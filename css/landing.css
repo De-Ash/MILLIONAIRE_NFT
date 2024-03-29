@@ -1,0 +1,59 @@
+.image
+{
+  position: relative;
+  display: inline-block;
+}
+
+img
+{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  animation: rotateImage 7.5s linear infinite;
+  /* Adjust timing and animation direction as needed */
+}
+
+.earth
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+  width: 15rem;
+  height: 15rem;
+  background: #ffffff00 url("../src/animationAssests/earthmap.jpg") 0 0 repeat;
+  border-radius: 50%;
+  background-size: 960px;
+  animation: rotateGlobe 30s linear infinite;
+  transition: transform 300ms linear;
+  transform-style: preserve-3d;
+  box-shadow: inset 20px 0 80px 6px rgba(0, 0, 0, 1);
+  color: #000;
+  z-index: 1;
+}
+/* Animation for globe rotation */
+@keyframes rotateGlobe
+{
+  0%
+  {
+    background-position: 0 0;
+  }
+
+  100%
+  {
+    background-position: 960px 0;
+  }
+}
+
+@keyframes rotateImage
+{
+  0%
+  {
+    transform: rotateZ(0);
+  }
+
+  100%
+  {
+    transform: rotateZ(360deg);
+  }
+}
