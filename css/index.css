@@ -1,6 +1,17 @@
-*
-{
+* {
   font-family: "Gaegu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Indie Flower", cursive;
   font-weight: 400;
   font-style: normal;
 }
@@ -10,57 +21,58 @@ h2,
 h3,
 h4,
 h5,
-h6
-{
-  font-family: "Indie Flower", cursive;
-  font-weight: 400;
-  font-style: normal;
+h6,
+small {
+  font-size: 1.5rem;
 }
-
 html,
-body
-{
+body {
   padding: 0;
   margin: 0;
   scrollbar-width: none;
 }
 
-.wrapper
-{
+.wrapper {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: linear-gradient(0deg, #ED1081, #E0358D, #D259A3, #C47DBA, #B5A2D0, #A7C7E7, #9AEDFF, #9AEDFF), url("../src/images/bright-squares.png") center/cover no-repeat;
+  background: linear-gradient(
+      0deg,
+      #ed1081,
+      #e0358d,
+      #d259a3,
+      #c47dba,
+      #b5a2d0,
+      #a7c7e7,
+      #9aedff,
+      #9aedff
+    ),
+    url("../src/images/bright-squares.png") center/cover no-repeat;
 }
 
-.import
-{
+.import {
   min-height: 70vh;
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
 
 /* Hide scrollbar for Webkit/Blink based browsers */
-body::-webkit-scrollbar
-{
+body::-webkit-scrollbar {
   display: none;
 }
 
 /* Track */
-::-webkit-scrollbar-track
-{
+::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb {
   background: #888;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover
-{
+::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 .fade-in {
