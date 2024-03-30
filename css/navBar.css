@@ -1,4 +1,1 @@
-.circular-img {
-    border-radius: 50%;
-    overflow: hidden; /* Ensure the circular shape */
-}
+.circular-img{border-radius:25%;overflow: hidden;}
