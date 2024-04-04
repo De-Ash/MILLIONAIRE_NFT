@@ -28,7 +28,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1.25);
   width: 15rem;
   height: 15rem;
   background: #ffffff00 url("../src/animationAssests/earthmap.jpg") 0 0 repeat;
@@ -49,6 +49,16 @@
   .earth {
     width: 12rem;
     height: 12rem;
+    transform:scale(1.25);
+  }
+}
+
+@media (min-width:800px) and (max-width:900px) {
+  .image {
+    transform: scale(0.75);
+  }
+  .animate{
+    transform: scale(3);
   }
 }
 
